@@ -17,10 +17,12 @@
   color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   background-color: #0F241A;
+  padding: 48px;
 }
 
 h1 {
@@ -39,10 +41,6 @@ p, a {
   line-height: 32px;
 }
 
-nav {
-  padding: 48px;
-}
-
 .logo {
   font-weight: 600;
   line-height: 24px;
@@ -53,5 +51,18 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 48px;
+  padding: 48px 0;
 }
+
+h1 a{
+  text-decoration: none;
+  font-size: 10vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+h1 a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #FFB31A;
+}
+
