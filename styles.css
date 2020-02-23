@@ -73,6 +73,16 @@ p, a {
   text-decoration: none;
 }
 
+.email {
+  font-family: 'Archia', monospace;
+  margin: 7px 0 1px;
+  font-size: 20px;
+  color: #003870;
+  line-height: 24px;
+  float: right;
+  text-decoration: none;
+}
+
 .hero {
   display: flex;
   flex-wrap: wrap;
