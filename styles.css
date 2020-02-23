@@ -77,7 +77,6 @@ p, a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 160px 0;
 }
 
 .post img {
@@ -87,14 +86,13 @@ p, a {
 .coming-soon {
   display: flex;
   flex-direction: column;
-  margin: 160px 0;
 }
 
 .coming-soon a {
   margin-bottom: 24px;
 }
 
-.post {
+section {
   margin-bottom: 160px;
 }
 
@@ -118,6 +116,10 @@ p, a {
 
   h3, .coming-soon a {
     font-size: 5vw;
+  }
+
+  section {
+    margin: 80px 0;
   }
 
 }
