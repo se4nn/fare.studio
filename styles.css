@@ -92,6 +92,10 @@ p, a {
   margin-bottom: 24px;
 }
 
+nav {
+  margin-bottom: 80px;
+}
+
 section {
   margin-bottom: 160px;
 }
@@ -116,6 +120,10 @@ section {
 
   h3, .coming-soon a {
     font-size: 5vw;
+  }
+
+  nav {
+    margin-bottom: 40px;
   }
 
   section {
