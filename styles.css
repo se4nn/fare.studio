@@ -94,6 +94,10 @@ p, a {
   margin-bottom: 24px;
 }
 
+.post {
+  margin-bottom: 160px;
+}
+
 @media only screen and (max-width: 768px) {
 
   body {
