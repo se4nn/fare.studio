@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Archia';
   font-weight: 300;
-  font-display: swap;
+  font-display: block;
   src: url(./fonts/Archia-Light.otf);
 }
 
 @font-face {
   font-family: 'Archia';
   font-weight: 700;
-  font-display: swap;
+  font-display: block;
   src: url(./fonts/Archia-Bold.otf);
 }
 
@@ -24,10 +24,13 @@ body {
   padding: 80px;
 }
 
-h1 {
+h1, p, caption {
   font-family: 'Archia';
   font-weight: 300;
-  font-size: 5vw;
+}
+
+h1 {
+  font-size: 4.4vw;
   line-height: 1.4;
   max-width: 100%;
   margin-bottom: 40px;
@@ -37,12 +40,27 @@ a {
   font-size: inherit;
 }
 
+p {
+  font-size: 2vw;
+  line-height: 1.6;
+  max-width: 74%;
+}
+
+.caption {
+  font-size: 16px;
+  margin: 16px 0 40px;
+}
+
 section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 img {
   max-width: 100%;
+}
+
+footer {
+  padding: 40px 0 0;
 }
 
 /* Nav */
@@ -64,29 +82,45 @@ nav {
   text-decoration: none;
 }
 
+/* PROJECT PAGES */
 
-/* Homepage */
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0px 80px;
-  grid-template-areas: ". Right" ". Right" "Left Right" "Left Right" "Left ." "Left .";
+.two-images>img:nth-child(2) {
+  margin-top: 50%;
 }
 
-.right {
-  grid-area: Right;
-}
-
-.left {
-  grid-area: Left;
-}
-
-.project-display {
+.two-images-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 0;
+  margin-top: 80px;
+}
+
+.two-images-image {
+  position: relative;
+  flex: 0 calc(50% - 40px);
+  height: calc(0.75 * (50% - 40px));
+}
+
+.two-images-image:nth-child(2) {
+  margin-top: 10%;
+}
+
+p + p {
+  margin-top: 40px;
+}
+
+p + img, img + p {
+  margin-top: 80px;
+}
+
+/* HOMEPAGE */
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0;
 }
 
 .project-thumbnail {
@@ -104,8 +138,8 @@ nav {
   margin-top: calc(-0.75 * (50% - 40px));
 }
 
-.project-thumbnail-background {
-
+.project-thumbnail:last-child {
+  margin-bottom: 0;
 }
 
 .project-thumbnail-logo {
@@ -127,4 +161,20 @@ nav {
 .project-thumbnail:hover .overlay {
   opacity: 0;
   transition: all 0.2s ease;
+}
+
+/* THE PASS */
+
+.the-pass-logo {
+  max-height: 80px;
+}
+
+/* LITTLEUNS */
+
+.littleuns-logo {
+  margin-top: 160px;
+}
+
+.littleuns-logo + .caption {
+  margin-bottom: 160px;
 }
