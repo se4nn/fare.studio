@@ -228,20 +228,26 @@ p + img, img + p {
   }
 
   h1 {
-    font-size: 16vw;
+    font-size: 12vw;
+    margin-bottom: 16px;
   }
 
   p {
     font-size: 8vw;
   }
 
+  nav {
+    margin: 16px 0 0;
+  }
+
   .header-link {
     text-align: left;
     float: none;
+    white-space: nowrap;
   }
 
   .arrow-link {
-    height: 12vw;
+    height: 8vw;
     width: auto;
   }
 
@@ -260,6 +266,10 @@ p + img, img + p {
 
   .project-thumbnail:nth-child(2n+1), .project-thumbnail {
     margin: 16px 0;
+  }
+
+  .next-project {
+    margin: 80px 0;
   }
 
 }
