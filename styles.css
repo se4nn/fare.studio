@@ -24,7 +24,7 @@ body {
   padding: 80px;
 }
 
-h1, p, caption {
+h1, p {
   font-family: 'Archia';
   font-weight: 300;
 }
@@ -38,6 +38,7 @@ h1 {
 
 a {
   font-size: inherit;
+  text-decoration: none;
 }
 
 p {
@@ -49,6 +50,12 @@ p {
 .caption {
   font-size: 16px;
   margin: 16px 0 40px;
+}
+
+.date {
+  font-size: 16px;
+  margin: 16px 0 40px;
+  max-width: none;
 }
 
 section {
@@ -63,7 +70,11 @@ footer {
   padding: 40px 0 0;
 }
 
-/* Nav */
+.underline, .header-link span {
+  border-bottom: 2px solid #fff;
+}
+
+/* NAV */
 
 nav {
   display: flex;
@@ -79,7 +90,10 @@ nav {
   text-align: right;
   text-transform: uppercase;
   line-height: 32px;
-  text-decoration: none;
+}
+
+nav a {
+  border: none;
 }
 
 /* PROJECT PAGES */
@@ -112,6 +126,20 @@ p + p {
 
 p + img, img + p {
   margin-top: 80px;
+}
+
+.header-link {
+  text-align: right;
+  float: right;
+  border: none;
+}
+
+.header-link span {
+  margin-right: 16px;
+}
+
+.next-project {
+  margin: 120px 0;
 }
 
 /* HOMEPAGE */
@@ -163,18 +191,21 @@ p + img, img + p {
   transition: all 0.2s ease;
 }
 
-/* THE PASS */
+/* PROJECT SPECIFIC CSS */
 
 .the-pass-logo {
   max-height: 80px;
 }
 
-/* LITTLEUNS */
-
-.littleuns-logo {
+.littleuns-logo, .talking-sumac-logo {
   margin-top: 160px;
 }
 
-.littleuns-logo + .caption {
+.littleuns-logo + .caption, .talking-sumac-logo + .caption {
   margin-bottom: 160px;
+}
+
+.talking-sumac-logo {
+  margin-top: 160px;
+  max-height: 90px;
 }
