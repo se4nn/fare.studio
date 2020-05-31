@@ -142,6 +142,11 @@ p + img, img + p {
   margin: 120px 0;
 }
 
+.arrow-link {
+  height: 3.2vw;
+  width: auto;
+}
+
 /* HOMEPAGE */
 
 .project-grid {
@@ -208,4 +213,49 @@ p + img, img + p {
 .talking-sumac-logo {
   margin-top: 160px;
   max-height: 90px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 640px) {
+
+  body {
+    padding: 16px;
+  }
+
+  h1, p{
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 16vw;
+  }
+
+  p {
+    font-size: 8vw;
+  }
+
+  .header-link {
+    text-align: left;
+    float: none;
+  }
+
+  .arrow-link {
+    height: 12vw;
+    width: auto;
+  }
+
+  .two-images-container {
+    margin-top: 16px;
+  }
+
+  .two-images-image {
+    flex: 100%;
+    height: auto;
+  }
+
+  .two-images-image:nth-child(2) {
+    margin-top: 16px;
+  }
+
 }
