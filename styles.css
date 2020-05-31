@@ -176,7 +176,7 @@ p + img, img + p {
 }
 
 .project-thumbnail-logo {
-  max-width: 320px;
+  max-width: 50%;
 }
 
 .project-thumbnail .overlay {
@@ -249,13 +249,17 @@ p + img, img + p {
     margin-top: 16px;
   }
 
-  .two-images-image {
+  .two-images-image, .project-thumbnail {
     flex: 100%;
     height: auto;
   }
 
   .two-images-image:nth-child(2) {
     margin-top: 16px;
+  }
+
+  .project-thumbnail:nth-child(2n+1), .project-thumbnail {
+    margin: 16px 0;
   }
 
 }
