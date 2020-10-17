@@ -169,11 +169,11 @@ h1 + a.large {
   }
 
   .built-open-hp {
-    background: center top 40px / contain fixed no-repeat url(./img/homepage/bo_iphone.png), #F9ECEC center / 110% no-repeat url(./img/homepage/bo_logo.png);
+    background: center top 40px / 80% fixed no-repeat url(./img/homepage/bo_iphone.png), #F9ECEC center / 110% no-repeat url(./img/homepage/bo_logo.png);
   }
 
   .tembo-hp {
-    background: center top 40px / contain fixed no-repeat url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+    background: center top 40px / 80% fixed no-repeat url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
   }
 
 }
