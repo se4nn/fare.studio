@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Archia';
+  font-weight: 300;
+  font-display: block;
+  src: url(./fonts/Archia-Light.otf);
+}
+
+@font-face {
+  font-family: 'Archia';
+  font-weight: 700;
+  font-display: block;
+  src: url(./fonts/Archia-Bold.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  font-family: 'Archia', monospace;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  max-width: min(calc(90%), 1920px);
+  margin: 80px auto;
+}
+
+h1, a.large {
+  font-size: clamp(32px, 5vw, 96px);
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: clamp(24px, 3vw, 56px);
+  line-height: 1.4;
+}
+
+p {
+  font-size: clamp(16px, 2vw, 32px);
+  line-height: 1.4;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 0;
+  position: relative;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25ch;
+  font-size: clamp(16px, 2vw, 32px);
+}
+
+nav, nav .links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .links a {
+  margin-left: 2vw;
+  font-size: clamp(16px, 1.6vw, 24px);
+  padding-bottom: 16px;
+  margin-bottom: -16px;
+}
+
+nav .links a:hover {
+  background-size: 20%;
+  background: left bottom / 20px url(./img/underline_wobble.svg);
+  background-repeat-y: no-repeat;
+  color: #0015FF;
+  animation: animatedUnderline 4s linear infinite;
+  transition: all 0.2s ease;
+}
+
+.underline {
+  background: left bottom / 4vw url(./img/underline_wobble_dark.svg);
+  padding-bottom: 24px;
+  background-repeat-y: no-repeat;
+  transition: all 0.2s ease;
+}
+
+.underline:hover {
+  background: 0 bottom / 4vw url(./img/underline_wobble.svg);
+  background-repeat-y: no-repeat;
+  color: #0015FF;
+  animation: animatedUnderline 4s linear infinite;
+  transition: all 0.2s ease;
+}
+
+@keyframes animatedUnderline {
+	from { background-position: 0 bottom; }
+	to { background-position: -100% bottom; }
+}
+
+h1 + a.large {
+  margin-top: min(8vw, 80px);
+  display: inline-block;
+}
+
+.hp-description {
+  position: absolute;
+  bottom: 56px;
+  left: 48px;
+  z-index: 10;
+}
+
+.hp-project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 80px 0;
+  overflow: hidden;
+}
+
+.hp-image {
+  padding: 48px;
+  height: clamp(300px, 70vh, 560px);
+  transition: all 0.4s ease;
+}
+
+.hp-image:hover {
+  transform: scale(1.06);
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+.hp-description h3, .hp-description p {
+  background: #fff;
+  padding: 0 8px;
+  width: fit-content;
+}
+
+.built-open-hp {
+  background: top 110px right 160px / contain no-repeat fixed url("./img/homepage/bo_iphone.png"), #F9ECEC center / 110% no-repeat url("./img/homepage/bo_logo.png");
+}
+
+.tembo-hp {
+  background: top 80px right 160px / contain no-repeat fixed url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+}
+
+.with-hp {
+  background: center / cover fixed url(./img/homepage/with.png);
+}
+
+.the-pass-hp {
+  background: center / cover fixed url(./img/homepage/the_pass.png);
+}
