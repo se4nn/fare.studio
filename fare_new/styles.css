@@ -153,9 +153,9 @@ h1 + a.large {
 }
 
 .with-hp {
-  background: center / cover fixed url(./img/homepage/with.png);
+  background: center / cover fixed url(./img/homepage/with.jpg);
 }
 
 .the-pass-hp {
-  background: center / cover fixed url(./img/homepage/the_pass.png);
+  background: center / cover fixed url(./img/homepage/the_pass.jpg);
 }
