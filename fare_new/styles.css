@@ -32,17 +32,17 @@ body {
 }
 
 h1, a.large {
-  font-size: clamp(32px, 5vw, 96px);
+  font-size: clamp(40px, 5vw, 96px);
   line-height: 1.4;
 }
 
 h3 {
-  font-size: clamp(24px, 3vw, 56px);
+  font-size: clamp(32px, 3vw, 56px);
   line-height: 1.4;
 }
 
 p {
-  font-size: clamp(16px, 2vw, 32px);
+  font-size: clamp(24px, 2vw, 32px);
   line-height: 1.4;
 }
 
@@ -88,7 +88,7 @@ nav .links a:hover {
 
 .underline {
   background: left bottom / 4vw url(./img/underline_wobble_dark.svg);
-  padding-bottom: 24px;
+  padding-bottom: 2vw;
   background-repeat-y: no-repeat;
   transition: all 0.2s ease;
 }
@@ -113,8 +113,8 @@ h1 + a.large {
 
 .hp-description {
   position: absolute;
-  bottom: 56px;
-  left: 48px;
+  bottom: 4vw;
+  left: 3.2vw;
   z-index: 10;
 }
 
@@ -128,7 +128,7 @@ h1 + a.large {
 
 .hp-image {
   padding: 48px;
-  height: clamp(300px, 70vh, 560px);
+  height: clamp(300px, 64vh, 560px);
   transition: all 0.4s ease;
 }
 
@@ -158,4 +158,22 @@ h1 + a.large {
 
 .the-pass-hp {
   background: center / cover fixed url(./img/homepage/the_pass.jpg);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 640px) {
+
+  .hp-image:hover {
+    transform: none;
+  }
+
+  .built-open-hp {
+    background: center top 40px / contain fixed no-repeat url(./img/homepage/bo_iphone.png), #F9ECEC center / 110% no-repeat url(./img/homepage/bo_logo.png);
+  }
+
+  .tembo-hp {
+    background: center top 40px / contain fixed no-repeat url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+  }
+
 }
