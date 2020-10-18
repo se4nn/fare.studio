@@ -37,7 +37,7 @@ h1 {
   margin: 40px 0;
 }
 
-h2, a.large {
+h2, a.large, p.large {
   font-size: clamp(40px, 3.2vw, 72px);
   line-height: 1.4;
 }
@@ -79,13 +79,12 @@ nav, nav .links{
 nav .links a {
   margin-left: 2vw;
   font-size: clamp(16px, 1.6vw, 24px);
-  padding-bottom: 16px;
-  margin-bottom: -16px;
+  padding-bottom: 1.2vw;
+  margin-bottom: -1.2vw;
 }
 
 nav .links a:hover {
-  background-size: 20%;
-  background: left bottom / 20px url(./img/underline_wobble.svg);
+  background: left 0 bottom 2px / 1.6vw url(./img/underline_wobble.svg);
   background-repeat-y: no-repeat;
   color: #0015FF;
   animation: animatedUnderline 4s linear infinite;
@@ -93,23 +92,23 @@ nav .links a:hover {
 }
 
 .underline {
-  background: 0 bottom / 3.2vw url(./img/underline_wobble_dark.svg);
+  background: left 0 bottom 2px / 3.2vw url(./img/underline_wobble_dark.svg);
   padding-bottom: 1.6vw;
   background-repeat-y: no-repeat;
   transition: all 0.2s ease;
 }
 
 .underline:hover {
-  background: 0 bottom / 3.2vw url(./img/underline_wobble.svg);
+  background: left 0 bottom 2px / 3.2vw url(./img/underline_wobble.svg);
   background-repeat-y: no-repeat;
   color: #0015FF;
-  animation: animatedUnderline 4s linear infinite;
   transition: all 0.2s ease;
+  animation: animatedUnderline 4s linear infinite;
 }
 
 @keyframes animatedUnderline {
-	from { background-position: 0 bottom; }
-	to { background-position: -100% bottom; }
+	from { background-position: left 0 bottom 2px; }
+	to { background-position: left -100% bottom 2px; }
 }
 
 h2 + a.large {
@@ -117,73 +116,59 @@ h2 + a.large {
   display: inline-block;
 }
 
-.hp-description {
+.project-description {
   position: absolute;
   bottom: 4vw;
-  left: 3.2vw;
+  left: 5%;
   z-index: 10;
 }
 
-.hp-project {
+.hp-project, .project-hero {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 80px 0;
   overflow: hidden;
 }
 
-.hp-image {
-  padding: 48px;
-  height: clamp(300px, 64vh, 560px);
-  transition: all 0.4s ease;
+.hp-project {
+  margin: 80px 0;
 }
 
-.hp-image:hover {
-  transform: scale(1.06);
-  z-index: 0;
-  transition: all 0.4s ease;
+.project-hero {
+  height: 100vh;
+  margin: calc(-80px - (clamp(16px, 2vw, 32px))) -6% 0;
+  z-index: -1;
 }
 
-.hp-description h3, .hp-description p {
+.project-description h3, .project-description p {
   background: #fff;
   padding: 0 8px;
   width: fit-content;
 }
 
-.built-open-hp {
-  background: top 110px right 160px / contain no-repeat fixed url("./img/homepage/bo_iphone.png"), #F9ECEC center / 110% no-repeat url("./img/homepage/bo_logo.png");
+.project-image {
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.tembo-hp {
-  background: top 80px right 160px / contain no-repeat fixed url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+.project-image img {
+  max-height: 100vh;
+  margin-top: -10vh;
+  width: auto;
 }
 
-.with-hp {
-  background: center / cover fixed url(./img/homepage/with.jpg);
-}
-
-.the-pass-hp {
-  background: center / cover fixed url(./img/homepage/the_pass.jpg);
-}
-
-.coders-hp {
-  background: center / cover fixed url(./img/homepage/coders.jpg);
+.project-next {
+  margin-top: clamp(80px, 10vw, 160px);
+  margin-bottom: clamp(80px, 10vw, 160px);
 }
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 640px) {
 
-  .hp-image:hover {
-    transform: none;
-  }
-
-  .built-open-hp {
-    background: center top 40px / 80% fixed no-repeat url(./img/homepage/bo_iphone.png), #F9ECEC center / 110% no-repeat url(./img/homepage/bo_logo.png);
-  }
-
-  .tembo-hp {
-    background: center top 40px / 80% fixed no-repeat url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
-  }
+  
 
 }

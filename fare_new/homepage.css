@@ -1,0 +1,51 @@
+/* HOME PAGE */
+
+.hp-image {
+  padding: 48px;
+  height: clamp(300px, 64vh, 560px);
+  transition: all 0.4s ease;
+}
+
+.hp-image:hover {
+  transform: scale(1.06);
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+.hp-built-open {
+  background: top 110px right 160px / contain no-repeat fixed url("./img/homepage/bo_iphone.png"), #F9ECEC center / 120% no-repeat url("./img/homepage/bo_logo.png");
+}
+
+.hp-tembo {
+  background: top 80px right 160px / contain no-repeat fixed url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+}
+
+.hp-with {
+  background: center / cover fixed url(./img/homepage/with.jpg);
+}
+
+.hp-the-pass {
+  background: center / cover fixed url(./img/homepage/the_pass.jpg);
+}
+
+.hp-coders {
+  background: center / cover fixed url(./img/homepage/coders.jpg);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 640px) {
+
+  .hp-image:hover {
+    transform: none;
+  }
+
+  .hp-built-open {
+    background: center top 40px / 80% fixed no-repeat url(./img/homepage/bo_iphone.png), #F9ECEC center / 110% no-repeat url(./img/homepage/bo_logo.png);
+  }
+
+  .hp-tembo {
+    background: center top 40px / 80% fixed no-repeat url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+  }
+
+}

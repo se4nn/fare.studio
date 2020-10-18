@@ -1,0 +1,24 @@
+/* BUILT OPEN */
+
+.project-built-open {
+  background: #F9ECEC center / 120% no-repeat fixed url("./img/homepage/bo_logo.png");
+}
+
+.built-open-image-hero {
+  width: 40%;
+  position: absolute;
+  top: calc(160px + (clamp(16px, 2vw, 32px)));
+  right: 80px;
+}
+
+.built-open-image-1 {
+  background: center / cover fixed url(./img/projects/built-open/image-1.jpg);
+}
+
+.built-open-image-2 {
+  background: top 15vw left 25% / 25% no-repeat fixed url("./img/projects/built-open/image-2-phone.png"), bottom 15vw right 25% / 25% no-repeat fixed url("./img/projects/built-open/image-2-phone.png"), center / cover no-repeat fixed url("./img/projects/built-open/image-2-bg.jpg");
+}
+
+.built-open-image-3 {
+  background: center / cover fixed url(./img/projects/built-open/image-3.jpg);
+}
