@@ -38,17 +38,17 @@ h1 {
 }
 
 h2, a.large, p.large {
-  font-size: clamp(40px, 3.2vw, 72px);
+  font-size: clamp(32px, 3.2vw, 72px);
   line-height: 1.4;
 }
 
 h3 {
-  font-size: clamp(32px, 2.4vw, 56px);
+  font-size: clamp(24px, 2.4vw, 56px);
   line-height: 1.4;
 }
 
 p {
-  font-size: clamp(24px, 1.6vw, 32px);
+  font-size: clamp(20px, 1.6vw, 32px);
   line-height: 1.4;
 }
 
@@ -169,6 +169,20 @@ h2 + a.large {
 
 @media only screen and (max-width: 640px) {
 
-  
+  .project-image {
+    height: 50vh;
+    background-attachment: unset !important;
+  }
+
+  .underline {
+    background: left 0 bottom 2px / 8vw url(./img/underline_wobble_dark.svg);
+    background-repeat-y: no-repeat;
+    padding-bottom: 4vw;
+  }
+
+  .underline:hover {
+    background: left 0 bottom 2px / 8vw url(./img/underline_wobble.svg);
+    background-repeat-y: no-repeat;
+  }
 
 }

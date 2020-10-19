@@ -22,3 +22,22 @@
 .built-open-image-3 {
   background: center / cover fixed url(./img/projects/built-open/image-3.jpg);
 }
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 640px) {
+
+  /* BUILT OPEN */
+
+  .built-open-image-hero {
+    width: 80%;
+    right: 10%;
+  }
+
+  .built-open-image-2 {
+    background: center / 80% no-repeat fixed url("./img/projects/built-open/image-2-phone.png"), center / cover no-repeat fixed url("./img/projects/built-open/image-2-bg.jpg");
+  }
+
+
+}
