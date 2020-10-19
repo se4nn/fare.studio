@@ -92,14 +92,14 @@ nav .links a:hover {
 }
 
 .underline {
-  background: left 0 bottom 2px / 3.2vw url(./img/underline_wobble_dark.svg);
-  padding-bottom: 1.6vw;
+  background: left 0 bottom 2px / 1.2ch url(./img/underline_wobble_dark.svg);
+  padding-bottom: 0.4ch;
   background-repeat-y: no-repeat;
   transition: all 0.2s ease;
 }
 
 .underline:hover {
-  background: left 0 bottom 2px / 3.2vw url(./img/underline_wobble.svg);
+  background: left 0 bottom 2px / 1.2ch url(./img/underline_wobble.svg);
   background-repeat-y: no-repeat;
   color: #0015FF;
   transition: all 0.2s ease;
@@ -175,13 +175,13 @@ h2 + a.large {
   }
 
   .underline {
-    background: left 0 bottom 2px / 8vw url(./img/underline_wobble_dark.svg);
+    background: left 0 bottom 2px / 1.2ch url(./img/underline_wobble_dark.svg);
     background-repeat-y: no-repeat;
-    padding-bottom: 4vw;
+    padding-bottom: 0.8ch;
   }
 
   .underline:hover {
-    background: left 0 bottom 2px / 8vw url(./img/underline_wobble.svg);
+    background: left 0 bottom 2px / 1.2ch url(./img/underline_wobble.svg);
     background-repeat-y: no-repeat;
   }
 

@@ -23,6 +23,27 @@
   background: center / cover fixed url(./img/projects/built-open/image-3.jpg);
 }
 
+/* THE PASS */
+
+.project-the-pass {
+  background: #F9F4E6 center / cover no-repeat fixed url("./img/projects/the-pass/hero-background.jpg");
+}
+
+.the-pass-image-1 {
+  background: center / cover fixed url(./img/projects/the-pass/image-1.jpg);
+}
+
+.the-pass-image-2 {
+  background: center / cover fixed url(./img/projects/the-pass/image-2.jpg);
+}
+
+.the-pass-image-3 {
+  background: center / cover fixed url(./img/projects/the-pass/image-3.jpg);
+}
+
+.the-pass-image-4 {
+  background: center / cover fixed url(./img/projects/the-pass/image-4.jpg);
+}
 
 /* MEDIA QUERIES */
 
