@@ -45,6 +45,25 @@
   background: center / cover fixed url(./img/projects/the-pass/image-4.jpg);
 }
 
+/* CODERS OF COLOUR */
+
+.project-coders {
+  background:  center / cover no-repeat fixed url("./img/homepage/coders.jpg");
+}
+
+.coders-image-1 {
+  background: center / cover fixed url(./img/projects/coders/image-1.jpg);
+}
+
+.coders-image-2 {
+  background: center / cover fixed url(./img/projects/coders/image-2.jpg);
+}
+
+.coders-image-3 {
+  background: center / cover fixed url(./img/projects/coders/image-3.jpg);
+}
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 640px) {
