@@ -1,0 +1,85 @@
+body {
+  margin: 80px auto 0;
+}
+
+.our-process {
+  width: 64%;
+  margin: 5% auto 10% auto;
+  flex-direction: column;
+}
+
+.our-process h2 {
+  margin-bottom: 16px;
+}
+
+.our-process h2 span {
+  color: #ffffff;
+  background: #0015FF;
+  padding: 0 0.2ch;
+  margin: 0 -0.2ch;
+}
+
+.our-process li {
+  font-size: clamp(24px, 2.4vw, 56px);
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.our-process li:before {
+  content: " ";
+  border: 2px solid #0015FF;
+  border-radius: 50%;
+  height: clamp(16px, 1.6vw, 40px);
+  width: clamp(16px, 1.6vw, 40px);
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.process-divider {
+  width: 2px;
+  height: 10vw;
+  background: #0015FF;
+  margin: 16px clamp(8px, 0.8vw, 16px);
+}
+
+.contact {
+  background: #0015FF;
+  margin: 0 -5.6% 0;
+  padding: 10% 7.5% 0;
+  flex-direction: column;
+}
+
+.contact h2, .contact p, .contact a {
+  color: #ffffff;
+  width: fit-content;
+}
+
+.contact-description {
+  width: 64%;
+  margin: 5% 0;
+}
+
+.contact .underline {
+  background: left 0 bottom 2px / 1.2ch url(./img/underline_wobble_white.svg);
+  background-repeat-y: no-repeat;
+}
+
+.contact .underline:hover {
+  color: #fff;
+  transition: all 0.2s ease;
+  animation: animatedUnderline 4s linear infinite;
+}
+
+.contact footer {
+  margin: 5% 0;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 640px) {
+
+  .our-process, .contact-description {
+    width: 100%;
+  }
+
+}
