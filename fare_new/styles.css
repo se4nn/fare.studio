@@ -93,7 +93,7 @@ nav .links a:hover {
 
 .underline {
   background: left 0 bottom 2px / 1.2ch url(./img/underline_wobble_dark.svg);
-  padding-bottom: 0.4ch;
+  padding-bottom: 0.8ch;
   background-repeat-y: no-repeat;
   transition: all 0.2s ease;
 }
