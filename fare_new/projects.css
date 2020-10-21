@@ -63,6 +63,24 @@
   background: center / cover fixed url(./img/projects/coders/image-3.jpg);
 }
 
+/* TEMBO */
+
+.project-tembo {
+  background: top 160px right 160px / contain no-repeat fixed url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
+}
+
+.tembo-image-1 {
+  background: center / cover fixed url(./img/projects/tembo/image-1.jpg);
+}
+
+.tembo-image-2 {
+  background: center / cover fixed url(./img/projects/tembo/image-2.jpg);
+}
+
+.tembo-image-3 {
+  background: center / cover fixed url(./img/projects/tembo/image-3.jpg);
+}
+
 
 /* MEDIA QUERIES */
 
@@ -77,6 +95,10 @@
 
   .built-open-image-2 {
     background: center / 80% no-repeat fixed url("./img/projects/built-open/image-2-phone.png"), center / cover no-repeat fixed url("./img/projects/built-open/image-2-bg.jpg");
+  }
+
+  .project-tembo {
+    background: top 80px right 40% / 80% no-repeat fixed url("./img/homepage/tembo_image.png"), #13123A top right / 50% no-repeat url("./img/homepage/tembo_gradient.png");
   }
 
 
