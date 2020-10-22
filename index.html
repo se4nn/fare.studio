@@ -9,50 +9,73 @@
   <title>Fare - A studio focussed on doing good</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./styles.css">
-  <link rel='shortcut icon' href='./img/favicon.png' type='image/png'/ >
+  <link rel="stylesheet" href="./homepage.css">
+  <link rel='shortcut icon' href='./img/favicon.png' type='image/png'/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+  <script>
+    AOS.init();
+  </script>
   <nav>
-    <a class="logo" href="https://fare.studio">Fare</a>
-    <a href="https://instagram.com/fare.studio"><img src="img/instagram.png" height="24px" width="24px"></a>
+    <a class="logo" href="/">Fare</a>
+    <div class="links">
+      <a href="./index.html#work">Work</a>
+      <a href="./our-process.html">Build</a>
+      <a href="mailto:hi@fare.studio">Contact us</a>
+    </div>
   </nav>
-  <section class="hero">
-    <h1>Fare is a design studio working with brands doing something good and something new.</h1>
-    <h1><a class="underline" href="mailto:hello@fare.studio">Email</a></h1>
+
+  <section data-aos="fade-up"  data-aos-duration="1500" data-aos-once="true">
+    <h1>We work with ambitious brands, to build something new.</h1>
   </section>
-  <section class="project-grid">
-    <a class="project-thumbnail" href="#"></a>
-    <a class="project-thumbnail" href="./coders-of-colour.html">
-      <div class="overlay">
-        <img class="project-thumbnail-logo" src="./img/home/coders_of_colour_logo.png" alt="Coders of Colour - Logo">
-      </div>
-      <img class="project-thumbnail-background" src="./img/home/coders_of_colour_home.jpg" alt="The Pass - Project Page">
-    </a>
-    <a class="project-thumbnail" href="./the-pass.html">
-      <div class="overlay">
-        <img class="project-thumbnail-logo" src="./img/home/the_pass_logo.png" alt="The Pass - Logo">
-      </div>
-      <img class="project-thumbnail-background" src="./img/home/the_pass_home.jpg" alt="The Pass - Project Page">
-    </a>
-    <a class="project-thumbnail" href="./littleuns.html">
-      <div class="overlay">
-        <img class="project-thumbnail-logo" src="./img/home/littleuns_logo.png" alt="Littleuns - Logo">
-      </div>
-      <img class="project-thumbnail-background" src="./img/home/littleuns_home.jpg" alt="Littleuns - Project Page">
-    </a>
-    <a class="project-thumbnail" href="./talking-sumac.html">
-      <div class="overlay">
-        <img class="project-thumbnail-logo" src="./img/home/talking_sumac_logo.png" alt="Talking Sumac - Logo">
-      </div>
-      <img class="project-thumbnail-background" src="./img/home/talking_sumac_home.jpg" alt="Talking Sumac - Project Page">
-    </a>
-    <a class="project-thumbnail" href="./photography.html">
-      <div class="overlay">
-        <img class="project-thumbnail-logo" src="./img/home/photography_logo.png" alt="Photography - Logo">
-      </div>
-      <img class="project-thumbnail-background" src="./img/home/photography_home.jpg" alt="Photography">
-    </a>
+
+  <a data-aos="fade-up" data-aos-duration="1500"  href="./built-open.html" class="hp-project" id="work">
+    <div class="project-description">
+      <h3>Built Open</h3>
+      <p>Launching 2021</p>
+    </div>
+    <div href="#" class="hp-image hp-built-open"></div>
+  </a>
+
+  <section>
+    <h2 data-aos="fade-up" data-aos-duration="1500" >We are your perfect design partner. We work with businesses who want to build something fun, interesting and new to bring out the best from your business and team.</h2>
+    <a href="mailto:hi@fare.studio" class="large underline" data-aos="fade-up" data-aos-duration="1500">Work with us</a>
   </section>
+
+  <a data-aos="fade-up" data-aos-duration="1500" href="./tembo.html"  class="hp-project">
+    <div class="project-description">
+      <h3>Tembo Money</h3>
+      <p>October 2020</p>
+    </div>
+    <div href="#" class="hp-image hp-tembo"></div>
+  </a>
+
+  <a data-aos="fade-up" data-aos-duration="1500" class="hp-project">
+    <div class="project-description">
+      <h3>With</h3>
+      <p>Coming soon</p>
+    </div>
+    <div href="#" class="hp-image hp-with"></div>
+  </a>
+
+  <a data-aos="fade-up" data-aos-duration="1500" href="./the-pass.html"  class="hp-project">
+    <div class="project-description">
+      <h3>The Pass</h3>
+      <p>April 2020</p>
+    </div>
+    <div href="#" class="hp-image hp-the-pass"></div>
+  </a>
+
+  <a data-aos="fade-up" data-aos-duration="1500" href="./coders.html"  class="hp-project">
+    <div class="project-description">
+      <h3>Coders of Colour</h3>
+      <p>July 2020</p>
+    </div>
+    <div href="#" class="hp-image hp-coders"></div>
+  </a>
+
 </body>
 <footer>
   <p>Copyright © Fare Studio Limited</p>
