@@ -274,6 +274,10 @@ figure.full-width img {
     margin: 40px;
   }
 
+  .article-mini {
+    max-width: 48%;
+  }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -306,6 +310,14 @@ figure.full-width img {
   .savings-card.tembo {
     margin-top: 16px;
     min-width: calc(100% - 32px);
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .article-mini {
+    max-width: 100%;
   }
 
 }
